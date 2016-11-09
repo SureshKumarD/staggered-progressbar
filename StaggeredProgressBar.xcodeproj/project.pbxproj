@@ -13,6 +13,7 @@
 		F939D1F31DD34416004ADBEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F939D1F11DD34416004ADBEA /* Main.storyboard */; };
 		F939D1F51DD34416004ADBEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F939D1F41DD34416004ADBEA /* Assets.xcassets */; };
 		F939D1F81DD34416004ADBEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F939D1F61DD34416004ADBEA /* LaunchScreen.storyboard */; };
+		F939D2021DD344A7004ADBEA /* StaggeredProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F939D2011DD344A7004ADBEA /* StaggeredProgressBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		F939D1F41DD34416004ADBEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F939D1F71DD34416004ADBEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F939D1F91DD34416004ADBEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F939D2001DD344A7004ADBEA /* StaggeredProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaggeredProgressBar.h; sourceTree = "<group>"; };
+		F939D2011DD344A7004ADBEA /* StaggeredProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaggeredProgressBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		F939D1E71DD34416004ADBEA /* StaggeredProgressBar */ = {
 			isa = PBXGroup;
 			children = (
+				F939D1FF1DD3448A004ADBEA /* StaggeredProgressBar */,
 				F939D1EB1DD34416004ADBEA /* AppDelegate.h */,
 				F939D1EC1DD34416004ADBEA /* AppDelegate.m */,
 				F939D1EE1DD34416004ADBEA /* ViewController.h */,
@@ -77,6 +81,15 @@
 				F939D1E91DD34416004ADBEA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F939D1FF1DD3448A004ADBEA /* StaggeredProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				F939D2001DD344A7004ADBEA /* StaggeredProgressBar.h */,
+				F939D2011DD344A7004ADBEA /* StaggeredProgressBar.m */,
+			);
+			path = StaggeredProgressBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,7 +123,7 @@
 				TargetAttributes = {
 					F939D1E41DD34416004ADBEA = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = SS2RACJE43;
+						DevelopmentTeam = ZCKCAR8VZE;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -152,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F939D1F01DD34416004ADBEA /* ViewController.m in Sources */,
+				F939D2021DD344A7004ADBEA /* StaggeredProgressBar.m in Sources */,
 				F939D1ED1DD34416004ADBEA /* AppDelegate.m in Sources */,
 				F939D1EA1DD34416004ADBEA /* main.m in Sources */,
 			);
@@ -271,7 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SS2RACJE43;
+				DEVELOPMENT_TEAM = ZCKCAR8VZE;
 				INFOPLIST_FILE = StaggeredProgressBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.self.StaggeredProgressBar;
@@ -283,7 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SS2RACJE43;
+				DEVELOPMENT_TEAM = ZCKCAR8VZE;
 				INFOPLIST_FILE = StaggeredProgressBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.self.StaggeredProgressBar;
