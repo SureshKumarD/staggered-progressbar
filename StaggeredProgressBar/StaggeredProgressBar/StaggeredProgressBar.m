@@ -15,23 +15,23 @@ const NSTimeInterval animationTimeInterval = 0.3f/30.0f;
 
 @property (nonatomic, assign) CGFloat internalCornerRadius;
 @property (nonatomic, strong) NSTimer *timer;
-@property (nonatomic, getter = isStripesAnimated) IBInspectable BOOL stripesAnimated;
-@property (nonatomic, assign) IBInspectable BOOL hideStripes;
+@property (nonatomic, getter = isStripesAnimated) BOOL stripesAnimated;
+@property (nonatomic, assign) BOOL hideStripes;
 @property (nonatomic, assign) double stripesOffset;
 
-@property (nonatomic, assign) IBInspectable double stripesAnimationVelocity;
-@property (nonatomic, assign) IBInspectable ProgressBarType progressBarType;
+@property (nonatomic, assign) double velocity;
+@property (nonatomic, assign) SPBarType barType;
 
 @property (nonatomic, strong) NSArray *colors;
-@property (atomic, assign) IBInspectable CGFloat progress;
-@property (nonatomic, assign) IBInspectable BOOL progressStretch;
-@property (nonatomic, assign) IBInspectable ProgressBarBehavior progressBarBehavior;
-@property (nonatomic, assign) IBInspectable BOOL uniformTintColor;
+@property (atomic, assign) CGFloat progress;
+@property (nonatomic, assign) BOOL progressStretch;
+@property (nonatomic, assign) SPBarBehavior progressBarBehavior;
+@property (nonatomic, assign) BOOL uniformTintColor;
 @property (nonatomic, strong, nonnull) NSArray *progressTintColors;
-@property (nonatomic, strong, nonnull) IBInspectable UIColor *progressTintColor;
-@property (nonatomic, strong, nonnull) IBInspectable UIColor *trackTintColor;
-@property (nonatomic, assign) IBInspectable CGFloat progressBarInset;
-@property (nonatomic, assign) IBInspectable CGFloat cornerRadius;
+@property (nonatomic, strong, nonnull) UIColor *progressTintColor;
+@property (nonatomic, strong, nonnull) UIColor *trackTintColor;
+@property (nonatomic, assign) CGFloat progressBarInset;
+@property (nonatomic, assign) CGFloat cornerRadius;
 
 @end
 
@@ -39,6 +39,13 @@ const NSTimeInterval animationTimeInterval = 0.3f/30.0f;
 
 @synthesize progress = _progress;
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if(self = [super initWithCoder:aDecoder]) {
+        [self allocateOrInitializeObjects];
+    }
+    return self;
+    
+}
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if(self = [super initWithFrame:frame]) {
@@ -52,14 +59,14 @@ const NSTimeInterval animationTimeInterval = 0.3f/30.0f;
     _stripesOffset                = 0;
     _stripesWidth                 = 10;
     _stripesColor                 = [UIColor blueColor];
-    _stripesAnimationVelocity     = 1;
+    _velocity                     = 1;
     _stripesAnimated              = YES;
     _hideStripes                  = NO;
     
-    _progressBarType              = ProgressBarTypeRounded;
+    _barType                      = ProgressBarTypeRounded;
     _progressStretch              = YES;
     _progress                     = 1.0f;
-    _progressBarBehavior          = ProgressBarBehaviorDefault;
+    _progressBarBehavior          = SPBarBehaviorDefault;
     _cornerRadius                 = 0;
     
     self.backgroundColor          = [UIColor blackColor];
@@ -129,7 +136,7 @@ const NSTimeInterval animationTimeInterval = 0.3f/30.0f;
     // Refresh the corner radius value
     self.internalCornerRadius = 0;
     
-    if (_progressBarType == ProgressBarTypeRounded) {
+    if (_barType == ProgressBarTypeRounded) {
         if (_cornerRadius > 0) {
             self.internalCornerRadius = _cornerRadius;
         }
@@ -139,11 +146,11 @@ const NSTimeInterval animationTimeInterval = 0.3f/30.0f;
     }
     
     // Compute the progressOffset for the stripe's animation
-    self.stripesOffset = (!self.stripesAnimated || fabs(self.stripesOffset) > 2 * _stripesWidth - 1) ? 0 : 1 * fabs(self.stripesAnimationVelocity) + self.stripesOffset;
+    self.stripesOffset = (!self.stripesAnimated || fabs(self.stripesOffset) > 2 * _stripesWidth - 1) ? 0 : 1 * fabs(self.velocity) + self.stripesOffset;
     
     // Compute the inner rectangle
     CGRect innerRect;
-    if (_progressBarType == ProgressBarTypeRounded)
+    if (_barType == ProgressBarTypeRounded)
     {
         innerRect = CGRectMake(_progressBarInset,
                                _progressBarInset,
@@ -154,20 +161,20 @@ const NSTimeInterval animationTimeInterval = 0.3f/30.0f;
         innerRect = CGRectMake(0, 0, CGRectGetWidth(rect) * self.progress, CGRectGetHeight(rect));
     }
     
-    if (self.progress == 0 && _progressBarBehavior == ProgressBarBehaviorIndeterminate)
+    if (self.progress == 0 && _progressBarBehavior == SPBarBehaviorIndeterminate)
     {
         [self drawStripes:context withRect:rect];
     } else if (self.progress > 0)
     {
         if (_stripesWidth > 0 && !self.hideStripes)
         {
-            if (_progressBarBehavior == ProgressBarBehaviorWaiting)
+            if (_progressBarBehavior == SPBarBehaviorWaiting)
             {
                 if (self.progress == 1.0f)
                 {
                     [self drawStripes:context withRect:innerRect];
                 }
-            } else if (_progressBarBehavior != ProgressBarBehaviorIndeterminate)
+            } else if (_progressBarBehavior != SPBarBehaviorIndeterminate)
             {
                 [self drawStripes:context withRect:innerRect];
             }
@@ -193,7 +200,7 @@ const NSTimeInterval animationTimeInterval = 0.3f/30.0f;
         //Get start and end range for no. of stripes.
         NSInteger start = -_stripesWidth;
         NSInteger end   = rect.size.width / (2 * _stripesWidth) + (2 * _stripesWidth);
-        CGFloat yOffset = (_progressBarType == ProgressBarTypeRounded) ? _progressBarInset : 0;
+        CGFloat yOffset = (_barType == ProgressBarTypeRounded) ? _progressBarInset : 0;
         
         for (NSInteger i = start; i <= end; i++)
         {

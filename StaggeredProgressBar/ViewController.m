@@ -20,10 +20,20 @@
 }
 
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self addPlainProgressBar];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - ProgressBar Creation Methods
+
+- (void)addPlainProgressBar {
+    
+}
 
 @end

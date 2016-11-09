@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM (NSUInteger, ProgressBarType)
+typedef NS_ENUM (NSUInteger, SPBarType)
 {
     //The progress bar has rounded corners and the gloss effect by default.
     ProgressBarTypeRounded = 0,
@@ -18,28 +18,29 @@ typedef NS_ENUM (NSUInteger, ProgressBarType)
 };
 
 
-typedef NS_ENUM (NSUInteger, ProgressBarBehavior)
+typedef NS_ENUM (NSUInteger, SPBarBehavior)
 {
     // The default behavior of a progress bar. This mode is identical to the
     // UIProgressView.
-    ProgressBarBehaviorDefault       = 0,
+    SPBarBehaviorDefault       = 0,
     
     //The indeterminate behavior display the stripes when the progress value is
     //equal to 0 only. This mode is helpful when percentage is not yet known,
     //but will be known shortly.
-    ProgressBarBehaviorIndeterminate = 1,
+    SPBarBehaviorIndeterminate = 1,
     
     // The waiting behavior display the stripes when the progress value is equal
     // to 1 only.
-    ProgressBarBehaviorWaiting       = 2,
+    SPBarBehaviorWaiting       = 2,
 };
 
 
 @interface StaggeredProgressBar : UIView
 
 
-@property (nonatomic, assign) NSInteger stripesWidth;
-@property (nonatomic, strong) UIColor *stripesColor;
+@property (nonatomic, assign) IBInspectable NSInteger stripesWidth;
+@property (nonatomic, strong) IBInspectable UIColor *stripesColor;
+@property (nonatomic, strong) IBInspectable UIColor *trackColor;
 
 //Animation delegate methods.
 - (void)startAnimating;
