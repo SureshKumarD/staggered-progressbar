@@ -40,7 +40,7 @@ VERSION
     
 SCREENSHOT
    
-    ![Alt text](/Resources/StaggeredProgressBar.png?raw=true "Example StaggeredProgressBar")
+    ![Alt text](/StaggeredProgressBar.png?raw=true "Example StaggeredProgressBar")
     
   
 LICENSE
