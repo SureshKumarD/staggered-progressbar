@@ -40,7 +40,7 @@ VERSION
     
 SCREENSHOT
    
-    ![StaggeredProgressBar](/StaggeredProgressBar/StaggeredProgressBar.png?raw=true "Example StaggeredProgressBar")
+    ![StaggeredProgressBar](https://github.com/SureshKumarD/StaggeredProgressBar/blob/master/StaggeredProgressBar.png?raw=true "Example StaggeredProgressBar")
     
     
   
