@@ -14,7 +14,6 @@
 		F939D1F51DD34416004ADBEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F939D1F41DD34416004ADBEA /* Assets.xcassets */; };
 		F939D1F81DD34416004ADBEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F939D1F61DD34416004ADBEA /* LaunchScreen.storyboard */; };
 		F939D2021DD344A7004ADBEA /* StaggeredProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F939D2011DD344A7004ADBEA /* StaggeredProgressBar.m */; };
-		F99BB0EB1DD4524500C3638F /* StaggeredProgressBar.png in Resources */ = {isa = PBXBuildFile; fileRef = F99BB0EA1DD4524500C3638F /* StaggeredProgressBar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +29,6 @@
 		F939D1F91DD34416004ADBEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F939D2001DD344A7004ADBEA /* StaggeredProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaggeredProgressBar.h; sourceTree = "<group>"; };
 		F939D2011DD344A7004ADBEA /* StaggeredProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaggeredProgressBar.m; sourceTree = "<group>"; };
-		F99BB0EA1DD4524500C3638F /* StaggeredProgressBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StaggeredProgressBar.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +96,6 @@
 				F939D1F41DD34416004ADBEA /* Assets.xcassets */,
 				F939D1F61DD34416004ADBEA /* LaunchScreen.storyboard */,
 				F939D1F11DD34416004ADBEA /* Main.storyboard */,
-				F99BB0EA1DD4524500C3638F /* StaggeredProgressBar.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -165,7 +162,6 @@
 				F939D1F81DD34416004ADBEA /* LaunchScreen.storyboard in Resources */,
 				F939D1F51DD34416004ADBEA /* Assets.xcassets in Resources */,
 				F939D1F31DD34416004ADBEA /* Main.storyboard in Resources */,
-				F99BB0EB1DD4524500C3638F /* StaggeredProgressBar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
