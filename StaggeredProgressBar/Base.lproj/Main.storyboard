@@ -52,6 +52,9 @@
                                                     <userDefinedRuntimeAttribute type="color" keyPath="progressTintColor">
                                                         <color key="value" red="0.95294117649999999" green="0.2156862745" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Staggered Bar 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWo-ix-b7F">
@@ -79,7 +82,7 @@
                                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="velocity">
-                                                        <real key="value" value="10"/>
+                                                        <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="0.0"/>
@@ -111,7 +114,7 @@
                                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="velocity">
-                                                        <real key="value" value="10"/>
+                                                        <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="5"/>
@@ -134,7 +137,7 @@
                                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="velocity">
-                                                        <real key="value" value="10"/>
+                                                        <real key="value" value="2"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="5"/>
@@ -157,7 +160,7 @@
                                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="velocity">
-                                                        <real key="value" value="10"/>
+                                                        <real key="value" value="3"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="5"/>
@@ -180,7 +183,7 @@
                                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="velocity">
-                                                        <real key="value" value="10"/>
+                                                        <real key="value" value="0.5"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="5"/>
@@ -203,12 +206,18 @@
                                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="velocity">
-                                                        <real key="value" value="10"/>
+                                                        <real key="value" value="0.29999999999999999"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Oc-7Z-TZM">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="rFg-h9-T5z"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -224,13 +233,17 @@
                                             <constraint firstItem="BWo-ix-b7F" firstAttribute="leading" secondItem="fnk-kB-Sc0" secondAttribute="leading" constant="10" id="7Cc-hd-WJ9"/>
                                             <constraint firstItem="97s-wp-DaE" firstAttribute="top" secondItem="OKn-PW-ivl" secondAttribute="bottom" constant="45" id="8UI-SK-yCM"/>
                                             <constraint firstItem="TEx-5L-CtY" firstAttribute="top" secondItem="elV-be-1Uy" secondAttribute="bottom" constant="10" id="8W8-Yh-ZK1"/>
+                                            <constraint firstItem="6Oc-7Z-TZM" firstAttribute="leading" secondItem="fnk-kB-Sc0" secondAttribute="leading" id="8iw-OP-KQA"/>
                                             <constraint firstAttribute="trailing" secondItem="Yv0-Uh-61P" secondAttribute="trailing" id="BgW-Ub-gHz"/>
+                                            <constraint firstAttribute="trailing" secondItem="6Oc-7Z-TZM" secondAttribute="trailing" id="L4t-nM-uP1"/>
                                             <constraint firstItem="748-i0-gcS" firstAttribute="leading" secondItem="fnk-kB-Sc0" secondAttribute="leading" id="LZa-6z-TTI"/>
                                             <constraint firstItem="Yv0-Uh-61P" firstAttribute="top" secondItem="97s-wp-DaE" secondAttribute="bottom" constant="30" id="NVj-eP-eCx"/>
                                             <constraint firstItem="748-i0-gcS" firstAttribute="top" secondItem="wav-hC-8cx" secondAttribute="bottom" constant="25" id="O7X-TC-gtE"/>
                                             <constraint firstItem="97s-wp-DaE" firstAttribute="leading" secondItem="fnk-kB-Sc0" secondAttribute="leading" constant="10" id="QqY-0J-Vnm"/>
                                             <constraint firstItem="elV-be-1Uy" firstAttribute="top" secondItem="kB7-Aw-ips" secondAttribute="bottom" constant="10" id="XZ6-a6-sq2"/>
                                             <constraint firstItem="kB7-Aw-ips" firstAttribute="leading" secondItem="fnk-kB-Sc0" secondAttribute="leading" id="Xmd-83-9TR"/>
+                                            <constraint firstItem="6Oc-7Z-TZM" firstAttribute="top" secondItem="TEx-5L-CtY" secondAttribute="bottom" constant="16" id="aA7-Ki-06Q"/>
+                                            <constraint firstAttribute="bottom" secondItem="6Oc-7Z-TZM" secondAttribute="bottom" constant="168" id="dhh-pq-xzx"/>
                                             <constraint firstItem="kB7-Aw-ips" firstAttribute="top" secondItem="PeY-9b-2gr" secondAttribute="bottom" constant="10" id="gC3-Pi-iCa"/>
                                             <constraint firstAttribute="trailing" secondItem="elV-be-1Uy" secondAttribute="trailing" id="iT2-4b-VIF"/>
                                             <constraint firstItem="wav-hC-8cx" firstAttribute="top" secondItem="fnk-kB-Sc0" secondAttribute="top" constant="70" id="jUm-yw-qXF"/>
@@ -261,6 +274,16 @@
                             <constraint firstItem="fnk-kB-Sc0" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" priority="250" id="lZB-0P-VuV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="containerView" destination="6Oc-7Z-TZM" id="ck0-of-WJl"/>
+                        <outlet property="staggeredProgressBar1" destination="748-i0-gcS" id="zgM-Qr-wId"/>
+                        <outlet property="staggeredProgressBar2" destination="OKn-PW-ivl" id="FyC-Hb-Dcz"/>
+                        <outlet property="staggeredProgressBar3" destination="Yv0-Uh-61P" id="iXf-IK-YtT"/>
+                        <outlet property="staggeredProgressBar4" destination="PeY-9b-2gr" id="vIy-vP-MUJ"/>
+                        <outlet property="staggeredProgressBar5" destination="kB7-Aw-ips" id="4FW-2a-fBE"/>
+                        <outlet property="staggeredProgressBar6" destination="elV-be-1Uy" id="WDc-0F-ukC"/>
+                        <outlet property="staggeredProgressBar7" destination="TEx-5L-CtY" id="zIB-4a-SyP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

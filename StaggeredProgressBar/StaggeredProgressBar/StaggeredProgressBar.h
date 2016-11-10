@@ -41,6 +41,7 @@ typedef NS_ENUM (NSUInteger, SPBarBehavior)
 @property (nonatomic, assign) IBInspectable NSInteger stripesWidth;
 @property (nonatomic, strong) IBInspectable UIColor *stripesColor;
 @property (nonatomic, strong) IBInspectable UIColor *trackColor;
+@property (nonatomic, assign) IBInspectable double velocity;
 
 //Animation delegate methods.
 - (void)startAnimating;

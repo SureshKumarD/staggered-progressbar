@@ -18,10 +18,7 @@ const NSTimeInterval animationTimeInterval = 0.3f/30.0f;
 @property (nonatomic, getter = isStripesAnimated) BOOL stripesAnimated;
 @property (nonatomic, assign) BOOL hideStripes;
 @property (nonatomic, assign) double stripesOffset;
-
-@property (nonatomic, assign) double velocity;
 @property (nonatomic, assign) SPBarType barType;
-
 @property (nonatomic, strong) NSArray *colors;
 @property (atomic, assign) CGFloat progress;
 @property (nonatomic, assign) BOOL progressStretch;
@@ -54,8 +51,8 @@ const NSTimeInterval animationTimeInterval = 0.3f/30.0f;
     return self;
 }
 
-- (void)allocateOrInitializeObjects
-{
+- (void)allocateOrInitializeObjects {
+    
     _stripesOffset                = 0;
     _stripesWidth                 = 10;
     _stripesColor                 = [UIColor blueColor];
