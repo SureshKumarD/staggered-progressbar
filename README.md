@@ -1,17 +1,16 @@
 # StaggeredProgressBar
 
 This is a library for custom progress bar. Where progress is shown as animated staggered/stashed bars.
-In your iOS project, you can use this staggered progress bar, 
-If you don't want to use the regular UIProgressbar.
+In your iOS project, you can use this staggered progress bar by integrating our library.
 
-Why to use this library:
-   
+WHY TO USE THIS LIBRARY:
+
      1. Get rid of the boring native UIProgressbar
      2. Fluid and rich User Interface
      3. Customizable to the great extend
      
 
-How to use this library:
+HOW TO USE THIS LIBRARY:
 
     //Progress bar.
     StaggeredProgressBar *progressBar = [[StaggeredProgressBar alloc] 
@@ -28,18 +27,22 @@ How to use this library:
     //Start progressing animation.
     [progressBar startAnimating];
     
- At some point you want to stop the progress bar, and remove it from the container.
+At some point you want to stop the progress bar, and remove it from the container.
     
     //Stop progress
     [progressBar stopAnimating];
     [progressBar removeFromSuperView];
     
     
-Latest Version
-    StaggeredProgressBar 1.0
+VERSION
+
+    StaggeredProgressBar v1.0
+    
+SCREENSHOT
+
     
   
-License
+LICENSE
 
     StaggeredProgressBar - An alternate for UIProgressBar
     Copyright 2015 by opensource community.
