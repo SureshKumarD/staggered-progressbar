@@ -39,7 +39,9 @@ VERSION
     StaggeredProgressBar v1.0
     
 SCREENSHOT
-
+   
+    ![StaggeredProgressBar](StaggeredProgressBar.png?raw=true "Example StaggeredProgressBar")
+    
     
   
 LICENSE
