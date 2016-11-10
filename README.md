@@ -40,7 +40,7 @@ VERSION
     
 SCREENSHOT
    
-    ![alt tag](/../StaggeredProgressBar/StaggeredProgressBar.png?raw=true "Example StaggeredProgressBar")
+    ![alt tag](StaggeredProgressBar.png?raw=true "Example StaggeredProgressBar")
     
     
   
