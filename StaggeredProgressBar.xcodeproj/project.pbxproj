@@ -14,6 +14,7 @@
 		F939D1F51DD34416004ADBEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F939D1F41DD34416004ADBEA /* Assets.xcassets */; };
 		F939D1F81DD34416004ADBEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F939D1F61DD34416004ADBEA /* LaunchScreen.storyboard */; };
 		F939D2021DD344A7004ADBEA /* StaggeredProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F939D2011DD344A7004ADBEA /* StaggeredProgressBar.m */; };
+		F99BB0EB1DD4524500C3638F /* StaggeredProgressBar.png in Resources */ = {isa = PBXBuildFile; fileRef = F99BB0EA1DD4524500C3638F /* StaggeredProgressBar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,11 +25,12 @@
 		F939D1EE1DD34416004ADBEA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F939D1EF1DD34416004ADBEA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F939D1F21DD34416004ADBEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F939D1F41DD34416004ADBEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F939D1F41DD34416004ADBEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		F939D1F71DD34416004ADBEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F939D1F91DD34416004ADBEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F939D2001DD344A7004ADBEA /* StaggeredProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaggeredProgressBar.h; sourceTree = "<group>"; };
 		F939D2011DD344A7004ADBEA /* StaggeredProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaggeredProgressBar.m; sourceTree = "<group>"; };
+		F99BB0EA1DD4524500C3638F /* StaggeredProgressBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StaggeredProgressBar.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +68,7 @@
 				F939D1EC1DD34416004ADBEA /* AppDelegate.m */,
 				F939D1EE1DD34416004ADBEA /* ViewController.h */,
 				F939D1EF1DD34416004ADBEA /* ViewController.m */,
-				F939D1F11DD34416004ADBEA /* Main.storyboard */,
-				F939D1F41DD34416004ADBEA /* Assets.xcassets */,
-				F939D1F61DD34416004ADBEA /* LaunchScreen.storyboard */,
+				F99BB0E91DD4524500C3638F /* Resources */,
 				F939D1F91DD34416004ADBEA /* Info.plist */,
 				F939D1E81DD34416004ADBEA /* Supporting Files */,
 			);
@@ -90,6 +90,17 @@
 				F939D2011DD344A7004ADBEA /* StaggeredProgressBar.m */,
 			);
 			path = StaggeredProgressBar;
+			sourceTree = "<group>";
+		};
+		F99BB0E91DD4524500C3638F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F939D1F41DD34416004ADBEA /* Assets.xcassets */,
+				F939D1F61DD34416004ADBEA /* LaunchScreen.storyboard */,
+				F939D1F11DD34416004ADBEA /* Main.storyboard */,
+				F99BB0EA1DD4524500C3638F /* StaggeredProgressBar.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +165,7 @@
 				F939D1F81DD34416004ADBEA /* LaunchScreen.storyboard in Resources */,
 				F939D1F51DD34416004ADBEA /* Assets.xcassets in Resources */,
 				F939D1F31DD34416004ADBEA /* Main.storyboard in Resources */,
+				F99BB0EB1DD4524500C3638F /* StaggeredProgressBar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +192,7 @@
 				F939D1F21DD34416004ADBEA /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		F939D1F61DD34416004ADBEA /* LaunchScreen.storyboard */ = {
@@ -188,6 +201,7 @@
 				F939D1F71DD34416004ADBEA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -324,6 +338,7 @@
 				F939D1FE1DD34416004ADBEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
