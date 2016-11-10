@@ -40,7 +40,7 @@ VERSION
     
 SCREENSHOT
    
-    ![](screenshot.png?raw=true "Example StaggeredProgressBar")
+    ![](./screenshot.png?raw=true "Example StaggeredProgressBar")
     
     
   
