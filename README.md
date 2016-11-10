@@ -35,23 +35,16 @@ How to use this library:
     [progressBar removeFromSuperView];
     
     
-Latest Version  - StaggeredProgressBar 1.0
+Latest Version
+    StaggeredProgressBar 1.0
     
   
-  
-StaggeredProgressBar - An alternate for UIProgressBar
+License
 
-Copyright 2015 by the contributors.
+    StaggeredProgressBar - An alternate for UIProgressBar
+    Copyright 2015 by opensource community.
 
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 1.0 of the License, or
-(at your option) any later version.
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
 
-Leanote IOS is licensed under the GPL v2.
+
     
