@@ -40,7 +40,7 @@ VERSION
     
 SCREENSHOT
    
-    ![StaggeredProgressBar](https://github.com/SureshKumarD/StaggeredProgressBar/blob/master/StaggeredProgressBar.png?raw=true "Example StaggeredProgressBar")
+    ![alt tag](https://github.com/SureshKumarD/StaggeredProgressBar/blob/master/StaggeredProgressBar.png?raw=true "Example StaggeredProgressBar")
     
     
   
