@@ -40,14 +40,14 @@ VERSION
     
 SCREENSHOT
    
-    ![](./screenshot.png?raw=true "Example StaggeredProgressBar")
+    ![](screenshot.png?raw=true "Example StaggeredProgressBar")
     
     
   
 LICENSE
 
     StaggeredProgressBar - An alternate for UIProgressBar
-    Copyright 2015 by opensource community.
+    Copyright 2016 by opensource community.
 
 
 
