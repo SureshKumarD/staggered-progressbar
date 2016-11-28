@@ -40,7 +40,7 @@ VERSION
     
 SCREENSHOT
 
-     #Staggered Progress Bar Demo: <p align="center"><img src="/screenshot.png" /></p>
+   #Staggered Progress Bar Demo: <p align="center"><img src="/screenshot.png" /></p>
      
 LICENSE
 
