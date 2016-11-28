@@ -41,7 +41,7 @@ VERSION
 SCREENSHOT
 
     Staggered Progress Bar Demo
- ![screenshot](/StaggeredProgressBar/screenshot.png?raw=true "Staggered Progress Bar Demo")
+ ![screenshot](/screenshot.png?raw=true "Staggered Progress Bar Demo")
    
     
     
