@@ -40,16 +40,8 @@ VERSION
     
 SCREENSHOT
 
-    Staggered Progress Bar Demo
-    <div style="text-align:center" markdown="1">
-    ![screenshot](/screenshot.png?raw=true "Staggered Progress Bar Demo")
-    </div>
-#+html: <p align="center"><img src="/screenshot.png" /></p>
-   
-   
-    
-    
-  
+     #Staggered Progress Bar Demo: <p align="center"><img src="/screenshot.png" /></p>
+     
 LICENSE
 
     StaggeredProgressBar - An alternate for UIProgressBar
