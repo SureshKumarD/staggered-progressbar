@@ -3,7 +3,7 @@
 This is a library for custom progress bar. Where progress is shown as animated staggered/stashed bars.
 In your iOS project, you can use this staggered progress bar by integrating our library.
 
-WHY TO USE THIS LIBRARY:
+WHY USE THIS LIBRARY:
 
      1. Get rid of the boring native UIProgressbar
      2. Fluid and rich User Interface
