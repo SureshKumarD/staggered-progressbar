@@ -40,7 +40,7 @@ VERSION
     
 SCREENSHOT
    
-    ![](screenshot.png?raw=true "Example StaggeredProgressBar")
+    [[https://github.com/SureshKumarD/StaggeredProgressBar/blob/master/screenshot.png|alt=octocat]]
     
     
   
