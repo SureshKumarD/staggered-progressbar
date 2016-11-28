@@ -41,8 +41,8 @@ VERSION
 SCREENSHOT
 
     Staggered Progress Bar Demo
-    ![alt tag](https://github.com/SureshKumarD/StaggeredProgressBar/blob/master/screenshot.png)
-    
+     ![Alt text](/StaggeredProgressBar/screenshot.png?raw=true "Staggered Progress Bar Demo")
+   
     
     
   
