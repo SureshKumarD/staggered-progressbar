@@ -41,9 +41,9 @@ VERSION
 SCREENSHOT
 
     Staggered Progress Bar Demo
- <div style="text-align:center" markdown="1">
-![screenshot](/screenshot.png?raw=true "Staggered Progress Bar Demo")
-</div>
+    <div style="text-align:center" markdown="1">
+    ![screenshot](/screenshot.png?raw=true "Staggered Progress Bar Demo")
+    </div>
    
    
     
