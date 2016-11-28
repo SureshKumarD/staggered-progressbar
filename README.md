@@ -39,8 +39,9 @@ VERSION
     StaggeredProgressBar v1.0
     
 SCREENSHOT
-   
-    [[https://github.com/SureshKumarD/StaggeredProgressBar/blob/master/screenshot.png|alt=octocat]]
+
+    ![alt tag](https://github.com/SureshKumarD/StaggeredProgressBar/blob/master/screenshot.png)
+    
     
     
   
