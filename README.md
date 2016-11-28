@@ -40,6 +40,7 @@ VERSION
     
 SCREENSHOT
 
+    Staggered Progress Bar Demo
     ![alt tag](https://github.com/SureshKumarD/StaggeredProgressBar/blob/master/screenshot.png)
     
     
