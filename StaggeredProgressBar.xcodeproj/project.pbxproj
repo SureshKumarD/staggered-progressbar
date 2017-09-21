@@ -14,6 +14,7 @@
 		F98F02871F73856200EE6C0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F98F02821F73856200EE6C0B /* Assets.xcassets */; };
 		F98F02881F73856200EE6C0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F98F02831F73856200EE6C0B /* LaunchScreen.storyboard */; };
 		F98F02891F73856200EE6C0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F98F02841F73856200EE6C0B /* Main.storyboard */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
