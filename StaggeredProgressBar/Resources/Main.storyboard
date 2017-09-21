@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="je2-p1-uTB">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fnk-kB-Sc0">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Staggered Bar 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wav-hC-8cx">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="7uG-Cu-KpS"/>
+                                                    <constraint firstAttribute="width" constant="180" id="Ygl-bf-FfM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="748-i0-gcS" customClass="StaggeredProgressBar">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="5" id="N0J-h1-OWw"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="stripesWidth">
+                                                        <integer key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="stripesColor">
+                                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="progressBarInset">
+                                                        <real key="value" value="-1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="trackTintColor">
+                                                        <color key="value" red="0.95294117649999999" green="0.2156862745" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="progressTintColor">
+                                                        <color key="value" red="0.95294117649999999" green="0.2156862745" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Staggered Bar 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWo-ix-b7F">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="180" id="lyE-I0-ngj"/>
+                                                    <constraint firstAttribute="height" constant="21" id="vZA-se-XId"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OKn-PW-ivl" customClass="StaggeredProgressBar">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="10" id="SPI-ha-2mS"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="stripesWidth">
+                                                        <integer key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                                        <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="stripesColor">
+                                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Staggered Bars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97s-wp-DaE">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="XDZ-Hq-khZ"/>
+                                                    <constraint firstAttribute="width" constant="180" id="uOa-QE-DNG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yv0-Uh-61P" customClass="StaggeredProgressBar">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="5" id="bG2-XC-JsB"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="stripesWidth">
+                                                        <integer key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="stripesColor">
+                                                        <color key="value" red="0.070588235289999995" green="0.70980392160000005" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PeY-9b-2gr" customClass="StaggeredProgressBar">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="5" id="wAv-wq-s5e"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="stripesWidth">
+                                                        <integer key="value" value="45"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="stripesColor">
+                                                        <color key="value" red="0.9997238005050505" green="0.066638132230863262" blue="0.093760219429975519" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kB7-Aw-ips" customClass="StaggeredProgressBar">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="5" id="Lle-NQ-Bho"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="stripesWidth">
+                                                        <integer key="value" value="60"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="stripesColor">
+                                                        <color key="value" red="0.98863636363636365" green="0.95433862888915699" blue="0.088621648817383422" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="elV-be-1Uy" customClass="StaggeredProgressBar">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="5" id="Dkd-3V-6fs"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="stripesWidth">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="stripesColor">
+                                                        <color key="value" red="0.38675402686505161" green="0.33385686350200972" blue="0.9557686237373737" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                                        <real key="value" value="0.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TEx-5L-CtY" customClass="StaggeredProgressBar">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="5" id="HK4-23-UII"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="stripesWidth">
+                                                        <integer key="value" value="35"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="stripesColor">
+                                                        <color key="value" red="0.97583254419191923" green="0.18887795509754948" blue="0.78606601808116794" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                                        <real key="value" value="0.29999999999999999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Oc-7Z-TZM">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="rFg-h9-T5z"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="elV-be-1Uy" firstAttribute="leading" secondItem="fnk-kB-Sc0" secondAttribute="leading" id="0cF-r5-tZv"/>
+                                            <constraint firstItem="OKn-PW-ivl" firstAttribute="leading" secondItem="fnk-kB-Sc0" secondAttribute="leading" id="2KV-Ks-iuF"/>
+                                            <constraint firstItem="TEx-5L-CtY" firstAttribute="leading" secondItem="fnk-kB-Sc0" secondAttribute="leading" id="2wb-rM-arb"/>
+                                            <constraint firstItem="PeY-9b-2gr" firstAttribute="top" secondItem="Yv0-Uh-61P" secondAttribute="bottom" constant="10" id="2zn-r1-Pp4"/>
+                                            <constraint firstItem="OKn-PW-ivl" firstAttribute="top" secondItem="BWo-ix-b7F" secondAttribute="bottom" constant="25" id="3im-KW-8J3"/>
+                                            <constraint firstItem="Yv0-Uh-61P" firstAttribute="leading" secondItem="fnk-kB-Sc0" secondAttribute="leading" id="4sl-M3-Wz3"/>
+                                            <constraint firstAttribute="trailing" secondItem="OKn-PW-ivl" secondAttribute="trailing" id="5Ic-N2-rUQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="748-i0-gcS" secondAttribute="trailing" id="6Ev-Ox-n0x"/>
+                                            <constraint firstItem="BWo-ix-b7F" firstAttribute="leading" secondItem="fnk-kB-Sc0" secondAttribute="leading" constant="10" id="7Cc-hd-WJ9"/>
+                                            <constraint firstItem="97s-wp-DaE" firstAttribute="top" secondItem="OKn-PW-ivl" secondAttribute="bottom" constant="45" id="8UI-SK-yCM"/>
+                                            <constraint firstItem="TEx-5L-CtY" firstAttribute="top" secondItem="elV-be-1Uy" secondAttribute="bottom" constant="10" id="8W8-Yh-ZK1"/>
+                                            <constraint firstItem="6Oc-7Z-TZM" firstAttribute="leading" secondItem="fnk-kB-Sc0" secondAttribute="leading" id="8iw-OP-KQA"/>
+                                            <constraint firstAttribute="trailing" secondItem="Yv0-Uh-61P" secondAttribute="trailing" id="BgW-Ub-gHz"/>
+                                            <constraint firstAttribute="trailing" secondItem="6Oc-7Z-TZM" secondAttribute="trailing" id="L4t-nM-uP1"/>
+                                            <constraint firstItem="748-i0-gcS" firstAttribute="leading" secondItem="fnk-kB-Sc0" secondAttribute="leading" id="LZa-6z-TTI"/>
+                                            <constraint firstItem="Yv0-Uh-61P" firstAttribute="top" secondItem="97s-wp-DaE" secondAttribute="bottom" constant="30" id="NVj-eP-eCx"/>
+                                            <constraint firstItem="748-i0-gcS" firstAttribute="top" secondItem="wav-hC-8cx" secondAttribute="bottom" constant="25" id="O7X-TC-gtE"/>
+                                            <constraint firstItem="97s-wp-DaE" firstAttribute="leading" secondItem="fnk-kB-Sc0" secondAttribute="leading" constant="10" id="QqY-0J-Vnm"/>
+                                            <constraint firstItem="elV-be-1Uy" firstAttribute="top" secondItem="kB7-Aw-ips" secondAttribute="bottom" constant="10" id="XZ6-a6-sq2"/>
+                                            <constraint firstItem="kB7-Aw-ips" firstAttribute="leading" secondItem="fnk-kB-Sc0" secondAttribute="leading" id="Xmd-83-9TR"/>
+                                            <constraint firstItem="6Oc-7Z-TZM" firstAttribute="top" secondItem="TEx-5L-CtY" secondAttribute="bottom" constant="16" id="aA7-Ki-06Q"/>
+                                            <constraint firstAttribute="bottom" secondItem="6Oc-7Z-TZM" secondAttribute="bottom" constant="168" id="dhh-pq-xzx"/>
+                                            <constraint firstItem="kB7-Aw-ips" firstAttribute="top" secondItem="PeY-9b-2gr" secondAttribute="bottom" constant="10" id="gC3-Pi-iCa"/>
+                                            <constraint firstAttribute="trailing" secondItem="elV-be-1Uy" secondAttribute="trailing" id="iT2-4b-VIF"/>
+                                            <constraint firstItem="wav-hC-8cx" firstAttribute="top" secondItem="fnk-kB-Sc0" secondAttribute="top" constant="70" id="jUm-yw-qXF"/>
+                                            <constraint firstItem="BWo-ix-b7F" firstAttribute="top" secondItem="748-i0-gcS" secondAttribute="bottom" constant="45" id="mBF-7n-fte"/>
+                                            <constraint firstAttribute="trailing" secondItem="PeY-9b-2gr" secondAttribute="trailing" id="mWq-p5-Iv7"/>
+                                            <constraint firstItem="PeY-9b-2gr" firstAttribute="leading" secondItem="fnk-kB-Sc0" secondAttribute="leading" id="mlR-Go-JD9"/>
+                                            <constraint firstAttribute="trailing" secondItem="kB7-Aw-ips" secondAttribute="trailing" id="rbh-hv-KfC"/>
+                                            <constraint firstAttribute="trailing" secondItem="TEx-5L-CtY" secondAttribute="trailing" id="rf3-Ts-C9X"/>
+                                            <constraint firstItem="wav-hC-8cx" firstAttribute="leading" secondItem="fnk-kB-Sc0" secondAttribute="leading" constant="10" id="xrt-s9-6ep"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fnk-kB-Sc0" firstAttribute="leading" secondItem="je2-p1-uTB" secondAttribute="leading" id="1HP-i8-36T"/>
+                                    <constraint firstItem="fnk-kB-Sc0" firstAttribute="top" secondItem="je2-p1-uTB" secondAttribute="top" id="SZY-iQ-Rg6"/>
+                                    <constraint firstAttribute="trailing" secondItem="fnk-kB-Sc0" secondAttribute="trailing" id="gz9-w1-79L"/>
+                                    <constraint firstAttribute="bottom" secondItem="fnk-kB-Sc0" secondAttribute="bottom" id="hD4-w7-kdT"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="je2-p1-uTB" secondAttribute="trailing" id="Vbn-tx-kBB"/>
+                            <constraint firstItem="fnk-kB-Sc0" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ViO-z3-oNh"/>
+                            <constraint firstItem="je2-p1-uTB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eCE-QP-CVm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="je2-p1-uTB" secondAttribute="bottom" id="exe-PH-yOv"/>
+                            <constraint firstItem="je2-p1-uTB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fLv-27-DjH"/>
+                            <constraint firstItem="fnk-kB-Sc0" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" priority="250" id="lZB-0P-VuV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="6Oc-7Z-TZM" id="ck0-of-WJl"/>
+                        <outlet property="staggeredProgressBar1" destination="748-i0-gcS" id="zgM-Qr-wId"/>
+                        <outlet property="staggeredProgressBar2" destination="OKn-PW-ivl" id="FyC-Hb-Dcz"/>
+                        <outlet property="staggeredProgressBar3" destination="Yv0-Uh-61P" id="iXf-IK-YtT"/>
+                        <outlet property="staggeredProgressBar4" destination="PeY-9b-2gr" id="vIy-vP-MUJ"/>
+                        <outlet property="staggeredProgressBar5" destination="kB7-Aw-ips" id="4FW-2a-fBE"/>
+                        <outlet property="staggeredProgressBar6" destination="elV-be-1Uy" id="WDc-0F-ukC"/>
+                        <outlet property="staggeredProgressBar7" destination="TEx-5L-CtY" id="zIB-4a-SyP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
